@@ -17,9 +17,7 @@ export default function Accueil() {
                 <p className="pitch">Je viens d'un parcours en systèmes numériques, entre réseaux, maintenance informatique et développement d'application. J'aime comprendre une infrastructure de bout en bout, du câblage jusqu'à l'interface que l'utilisateur touche.</p>
                 <div className="cta-row">
                     <Link className="btn btn-primary" to="/projets">Voir mes projets</Link>
-                    <Link className="btn btn-ghost" to="/contact">Me contacter</Link>
-                    <a className="btn btn-ghost" href="/E5-Synthèse.pdf" download>Télécharger la grille de compétences</a>
-                    </div>
+                    <Link className="btn btn-ghost" to="/contact">Me contacter</Link>                    </div>
             </div>
         </main>
     );
