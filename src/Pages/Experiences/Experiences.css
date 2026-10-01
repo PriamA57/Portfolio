@@ -1,0 +1,144 @@
+.experiences-page {
+  min-height: calc(100dvh - 105px);
+  padding: 44px 0 80px;
+}
+
+.experiences-page > .wrap {
+  width: min(100% - 64px, 1536px);
+  margin: 0 auto;
+}
+
+.experiences-page .kicker {
+  margin-bottom: 26px;
+  color: #9cafd0;
+  font-size: 1.15rem;
+}
+
+.experiences-page .sec-title {
+  max-width: none;
+  color: #edf2fc;
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
+  letter-spacing: -0.045em;
+  line-height: 1.18;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 70px;
+  padding-left: 46px;
+}
+
+.timeline::before {
+  position: absolute;
+  top: 9px;
+  bottom: 0;
+  left: 9px;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #22324d 0,
+    #22324d 7px,
+    transparent 7px,
+    transparent 14px
+  );
+  content: '';
+}
+
+.tl-item {
+  position: relative;
+  padding-bottom: 75px;
+}
+
+.tl-item:last-child {
+  padding-bottom: 0;
+}
+
+.tl-item::before {
+  position: absolute;
+  top: 2px;
+  left: -46px;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #45d7ca;
+  border-radius: 50%;
+  background: #0b1220;
+  content: '';
+}
+
+.tl-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 22px;
+  margin-bottom: 13px;
+}
+
+.tl-role {
+  color: #edf2fc;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.tl-org {
+  color: #45d7ca;
+  font-size: 1.25rem;
+}
+
+.tl-date {
+  margin-left: auto;
+  color: #9cafd0;
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+
+.tl-loc {
+  margin-bottom: 22px;
+  color: #9cafd0;
+  font-size: 1.05rem;
+}
+
+.tl-item ul {
+  margin: 0;
+  padding-left: 26px;
+  color: #9cafd0;
+  font-size: 1.15rem;
+  line-height: 1.55;
+}
+
+.tl-item li {
+  padding-left: 2px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 760px) {
+  .experiences-page {
+    padding: 40px 0 64px;
+  }
+
+  .experiences-page > .wrap {
+    width: min(100% - 40px, 1536px);
+  }
+
+  .timeline {
+    margin-top: 44px;
+    padding-left: 34px;
+  }
+
+  .tl-item::before {
+    left: -34px;
+  }
+
+  .tl-date {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .tl-role,
+  .tl-org {
+    font-size: 1.05rem;
+  }
+
+  .tl-item ul {
+    font-size: 1rem;
+  }
+}

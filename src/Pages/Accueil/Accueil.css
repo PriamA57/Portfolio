@@ -1,0 +1,126 @@
+body {
+  background: #0b1220;
+  color: #e8eef9;
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+}
+
+body.home-page {
+  overflow: hidden;
+}
+
+.hero {
+  height: calc(100dvh - 105px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.hero > .wrap {
+  width: min(100% - 64px, 1536px);
+  margin: 0 auto;
+}
+
+.hero h1 {
+  max-width: none;
+  color: #edf2fc;
+  font-size: clamp(3.2rem, 5vw, 5rem);
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.hero .role {
+  max-width: 700px;
+  margin-top: 30px;
+  color: #9cafd0;
+  font-size: clamp(1.15rem, 1.6vw, 1.4rem);
+  line-height: 1.55;
+}
+
+.hero p.pitch {
+  max-width: 700px;
+  margin-top: 25px;
+  color: #9cafd0;
+  font-size: clamp(1rem, 1.25vw, 1.2rem);
+  line-height: 1.6;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 44px;
+}
+
+.btn {
+  min-height: 58px;
+  padding: 0 28px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  color: #edf2fc;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #4bd0c5;
+  color: #062725;
+}
+
+.btn-primary:hover {
+  background: #69ded4;
+}
+
+.btn-ghost {
+  border-color: #22324d;
+}
+
+.btn-ghost:hover {
+  border-color: #45d7ca;
+}
+
+@media (max-width: 760px) {
+  body.home-page {
+    overflow-y: auto;
+  }
+
+  .hero {
+    min-height: calc(100dvh - 77px);
+    height: auto;
+    overflow: visible;
+    padding: 32px 0;
+  }
+
+  .hero > .wrap {
+    width: min(100% - 40px, 1536px);
+  }
+
+  .status {
+    margin-bottom: 32px;
+    font-size: 0.95rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 15vw, 4.5rem);
+  }
+
+  .hero .role {
+    margin-top: 25px;
+  }
+
+  .cta-row {
+    gap: 12px;
+    margin-top: 38px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0 20px;
+    font-size: 1rem;
+  }
+}
