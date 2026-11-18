@@ -18,6 +18,7 @@ export default function Home() {
           <div className="btns">
             <Link className="btn p" to="/projets">Voir mes projets</Link>
             <Link className="btn" to="/contact">Me contacter</Link>
+            <a className="btn" href={`${import.meta.env.BASE_URL}CV_Antoine_Priam.pdf`} download="CV_Antoine_Priam.pdf">Télécharger mon CV</a>
           </div>
         </div>
       </div>
