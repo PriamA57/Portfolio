@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const WORDS = ['Etudie au Lycée Robert Schuman', 'Futur développeur full stack']
+const WORDS = ['Étudie au Lycée Robert Schuman', 'Futur développeur full stack']
 
 export default function Typed() {
   const [text, setText] = useState('')
